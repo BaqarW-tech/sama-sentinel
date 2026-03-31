@@ -1,22 +1,13 @@
-# 🏦 SAMA Sentinel — Saudi Central Bank Policy Monitor
-
+🏦 SAMA Sentinel — Saudi Central Bank Policy Monito
 
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 
-
-
-
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
-
-
-
 
 ![Status](https://img.shields.io/badge/Status-Active-green)
 
-
-
-## Overview
+ Overview
 SAMA Sentinel is an AI-powered monetary policy monitoring tool that analyzes
 Saudi Central Bank (SAMA) communications to detect hawkish or dovish policy
 signals. It extracts text from official SAMA reports, scores them on a
@@ -26,42 +17,43 @@ indicators in an interactive dashboard.
 Built as a portfolio project demonstrating end-to-end data analytics:
 from PDF ingestion and NLP scoring to interactive visualization.
 
----
+ Features
+- 📄 PDF Ingestion — Extracts text from SAMA press releases and reports
+- 🔍 Policy Scoring — Keyword-based hawkish/dovish scoring (1=very dovish, 10=very hawkish)
+- 📈 Policy Heat Index — Line chart tracking policy stance over time
+- 📊 Economic Dashboard — Inflation, foreign reserves, and SAIBOR alongside each report
+- 🎚️ What-If Simulator — Oil price shock scenario tool showing simulated policy response
 
-## Features
-- 📄 **PDF Ingestion** — Extracts text from SAMA press releases and reports
-- 🔍 **Policy Scoring** — Keyword-based hawkish/dovish scoring (1=very dovish, 10=very hawkish)
-- 📈 **Policy Heat Index** — Line chart tracking policy stance over time
-- 📊 **Economic Dashboard** — Inflation, foreign reserves, and SAIBOR alongside each report
-- 🎚️ **What-If Simulator** — Oil price shock scenario tool showing simulated policy response
-
----
-
-## Project Structure
+ Project Structure
 sama-sentinel/
 │
 ├── data/
-│   ├── economic_indicators.csv   # Saudi macro data (inflation, reserves, SIBOR)
-│   ├── press_releases.csv        # Extracted text from SAMA PDFs
-│   ├── policy_analysis.csv       # Hawkish/dovish scores per document
-│   └── sama_merged.csv           # Final merged dataset for dashboard
+│   ├── economic_indicators.csv    Saudi macro data (inflation, reserves, SIBOR)
+│   ├── press_releases.csv         Extracted text from SAMA PDFs
+│   ├── policy_analysis.csv        Hawkish/dovish scores per document
+│   └── sama_merged.csv            Final merged dataset for dashboard
 │
 ├── notebooks/
-│   └── SAMA_Sentinel.ipynb       # Full Google Colab notebook
+│   └── SAMA_Sentinel.ipynb        Full Google Colab notebook
 │
-├── sama_pdfs/                    # Source PDF files (SAMA reports)
-├── extracted_text/               # Raw extracted text files
-├── cleaned_text/                 # Cleaned text files
+├── sama_pdfs/                     Source PDF files (SAMA reports)
+├── extracted_text/                Raw extracted text files
+├── cleaned_text/                  Cleaned text files
 │
-├── app.py                        # Streamlit dashboard
+├── app.py                         Streamlit dashboard
 ├── requirements.txt
 └── README.md
----
 
-## How to Run
 
-### 1. Clone the repository
+ How to Run
+
+ 1. Clone the repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/sama-sentinel.git
 cd sama-sentinel
 ```
+ 2. Install dependencies
+pip install -r requirements.txt
+
+ 3. Launch the dashboard
+streamlit run app.py​
