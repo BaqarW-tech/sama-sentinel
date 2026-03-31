@@ -1,0 +1,6 @@
+date,filename,hawkish_score,stance,key_phrases,hawkish_hits,dovish_hits,inflation,reserves,sibor
+2025-10-01,Inflation_Q4_2025_EN.txt,8.6,Hawkish,🔴 inflation | 🔵 growth | 🔵 slowdown,66,12,2.05,468.2,5.046
+2025-07-01,Key_Economic_Developments_Q3_2025-EN.txt,2.2,Dovish,🔵 growth | 🔴 inflation | 🔵 unemployment,8,53,2.1,470.2,4.991
+2026-01-01,Monthly_Bulletin_Jan_2026.txt,2.8,Dovish,🔵 growth | 🔴 interest rate | 🔵 support,3,12,2.05,468.2,5.046
+2021-01-01,Saudi_IF_Report_2021_Final_DIGITAL_v3.txt,1.1,Dovish,🔵 growth | 🔵 support | 🔵 recovery,1,133,3.5,450.9,1.359
+2024-01-01,Sixtieth_Annual_Report-EN.txt,2.7,Dovish,🔵 growth | 🔵 support | 🔴 inflation,37,157,2.93,469.6,5.923
